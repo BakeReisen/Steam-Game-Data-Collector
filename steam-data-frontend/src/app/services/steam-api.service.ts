@@ -4,7 +4,8 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 // API 基础地址
-const API_BASE_URL = 'http://localhost:5000/api';
+// Docker / 生产环境下建议通过反向代理访问同域 `/api`
+const API_BASE_URL = '/api';
 
 export interface CollectionRequest {
   mode: string;  // 'sample' | 'custom' | 'chinese_reviews' | 'steamspy' | 'top_games'
