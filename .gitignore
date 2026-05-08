@@ -90,6 +90,9 @@ env/
 
 # 排除 JSON 数据文件
 *.json
+!steam-data-frontend/*.json
+!steam-data-frontend/**/*.json
+
 
 # ========================================
 # 数据目录 - 排除所有数据
@@ -172,5 +175,7 @@ tmp/
 # 排除所有文本文件(除了 .md)
 *.txt
 # 但保留 requirements.txt
+!请启动start-fullstack.bat来启动该项目.txt
 !requirements.txt
 !QUICK_START.txt
+
